@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Gradient color generator</title>
+
+<style>
+body {
+font: "Roboto";
+text-align: center;
+background: linear-gradient(to right, rgb(125, 188, 32), rgb(52, 21, 203));
+font-size: 30px;
+}
+
+div {
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+}
+</style>
+</head>
+
+<body class="change">
+<div>
+<h2>Gradient Color Generator</h2>
+<b>Gradient Background:</b>
+<input type="color" class="color1" value="#7DBC20">
+<input type="color" class="color2" value="#3415CB">
+</div>
+
+<script>
+var css = document.querySelector("h2");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var body = document.querySelector(".change");
+
+function changeGradient() {
+body.style.background =
+"linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+css.textContent = body.style.background + ";";
+}
+
+color1.addEventListener("input", changeGradient);
+color2.addEventListener("input", changeGradient); 
+</script>
+</body>
+
+</html>
