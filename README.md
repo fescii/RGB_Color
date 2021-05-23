@@ -2,4 +2,5 @@
 RGB gradient color picker
 Demo will be available soon thank you..
 I hope you fing it useful
-https://fescii.github.io/RGB_Color/(Live)
+
+[Live Demo](https://fescii.github.io/RGB_Color)
